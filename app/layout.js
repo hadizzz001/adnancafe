@@ -58,24 +58,24 @@ export default function RootLayout({ children }) {
   <link rel="preconnect" href="https://ads.adthrive.com/" crossOrigin="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {/* This site is optimized with the Yoast SEO plugin v21.8 - https://yoast.com/wordpress/plugins/seo/ */}
-  <title>Home Grounds - Your Trusted Resource For All Things Coffee</title>
+  <title>CoffeeAdnan - Your Trusted Resource For All Things Coffee</title>
   <meta
     name="description"
-    content="Home Grounds is the leading coffee website online. Our team of specialty coffee experts cover everything from gear reviews to brewing guides."
+    content="CoffeeAdnan is the leading coffee website online. Our team of specialty coffee experts cover everything from gear reviews to brewing guides."
   />
   <link rel="canonical" href="" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="Home Grounds - Your Trusted Resource For All Things Coffee"
+    content="CoffeeAdnan - Your Trusted Resource For All Things Coffee"
   />
   <meta
     property="og:description"
-    content="Home Grounds is the leading coffee website online. Our team of specialty coffee experts cover everything from gear reviews to brewing guides."
+    content="CoffeeAdnan is the leading coffee website online. Our team of specialty coffee experts cover everything from gear reviews to brewing guides."
   />
   <meta property="og:url" content="" />
-  <meta property="og:site_name" content="Home Grounds" />
+  <meta property="og:site_name" content="CoffeeAdnan" />
   <meta
     property="article:publisher"
     content="https://www.facebook.com/homegroundsco/"
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
   <meta property="article:modified_time" content="2023-12-15T14:14:03+00:00" />
   <meta
     property="og:image"
-    content="/wp-content/uploads/2019/08/cropped-hg-new-logo-heart-favicon.png"
+    content="/pics/logo.png"
   />
   <meta property="og:image:width" content={512} />
   <meta property="og:image:height" content={512} />
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
   <link
     rel="alternate"
     type="application/rss+xml"
-    title="Home Grounds » Feed"
+    title="CoffeeAdnan » Feed"
     href="feed/"
   />
   <link
@@ -340,21 +340,21 @@ export default function RootLayout({ children }) {
   />
   <link
     rel="icon"
-    href="/wp-content/uploads/2019/08/cropped-hg-new-logo-heart-favicon-32x32.png"
+    href="/pics/logo.png"
     sizes="32x32"
   />
   <link
     rel="icon"
-    href="/wp-content/uploads/2019/08/cropped-hg-new-logo-heart-favicon-192x192.png"
+    href="/pics/logo.png"
     sizes="192x192"
   />
   <link
     rel="apple-touch-icon"
-    href="/wp-content/uploads/2019/08/cropped-hg-new-logo-heart-favicon-180x180.png"
+    href="/pics/logo.png"
   />
   <meta
     name="msapplication-TileImage"
-    content="/wp-content/uploads/2019/08/cropped-hg-new-logo-heart-favicon-270x270.png"
+    content="/pics/logo.png"
   />
   <style
     id="wp-custom-css"
