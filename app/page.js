@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Nav from "./_components/Nav";
 import Footer from "./_components/Footer";
@@ -13,64 +15,136 @@ export default function Home() {
         <div id="content" className="site-content">
           <div
             id="primary"
-            className="content-area grid-parent mobile-grid-100 grid-100 tablet-grid-100"
+            className=" "
           >
             <main id="main" className="site-main">
               <article
-                id="post-12848"
-                className="post-12848 page type-page status-publish has-post-thumbnail infinite-scroll-item"
+                className=" "
               >
-                <div className="inside-article">
-                  <div className="entry-content">
-                    <div className="wp-block-columns alignfull has-2-columns bannr-gry is-layout-flex wp-container-3 wp-block-columns-is-layout-flex">
-                      <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                        <div className="hg_ho_image">
-                          <img
-                            decoding="async"
-                            src=" /pics/banner.png"
-                            className="wp-image hg_ho_img"
-                            alt="hand holding a coffee mug"
-                          />
-                        </div>
-                      </div>
-                      <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                        <div className="hg_ho_content">
-                          <h1 className="hg_ho_heading">
-                            <strong>Brew Better Coffee</strong>
-                          </h1>
-                          <p>
-                            Learn to <strong>brew</strong> world-class coffee at
-                            home without confusing yourself.
-                            <br />
-                            Click for free emails that will sharpen your
-                            coffee skills
-                          </p>
-                          <p>
-                            <a
-                              href="/contact"
-                              className="hg_ho_btn hg_ho_btn1"
-                              style={{ backgroundColor: "#a0292a" }}
-                            >
-                              Contact Us
-                            </a>
-                            <a
-                              href="https://www.youtube.com/channel/UCgk5vlpGa_SEok6taD8iodg"
-                              className="hg_ho_btn hg_ho_btn2"
-                              style={{ backgroundColor: "transparent" }}
-                            >
-                              See Us On Instagram
-                            </a>
-                          </p>
+                <div className=" ">
+                  <div className=" ">
+
+
+
+
+                    <div className="relative w-full h-screen">
+                      {/* Video Background */}
+                      <video
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        autoPlay
+                        muted
+                        loop
+                      >
+                        <source src="/pics/vid1.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+
+                      {/* Overlay Content */}
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+                        {/* Logo */}
+                        <img
+                          src="/pics/logo2.png"
+                          alt="Logo"
+                          className="mb-4 w-74 md:w-72"
+                          style={{ objectFit: 'contain' }}
+                        />
+
+                        {/* Title */}
+                        <h1
+                          style={{
+                            margin: '0',
+                            fontSize: "47px",
+                            textWrapMode: "nowrap",
+                          }}
+                          className="text-white text-2xl md:text-4xl font-bold"
+                        >
+                          Coffee Adnan
+                        </h1>
+
+                        {/* Year with Horizontal Lines */}
+                        <div className="flex items-center">
+                          <hr style={{ borderWidth: "1px", background: "white" }} className="w-16 md:w-24 border-t-4 border-white" />
+                          <span className="mx-4 text-lg md:text-xl font-bold">1951</span>
+                          <hr style={{ borderWidth: "1px", background: "white" }} className="w-16 md:w-24 border-t-4 border-white" />
                         </div>
                       </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div id="about" className="container mx-auto px-4 py-8 lg:py-16">
+                      <div className="grid">
+                        <div className="text-center lg:text-left">
+                          <div className="who-we-are-block">
+                            <div className="container mx-auto px-4 py-8">
+                              <h1 className="text-3xl font-bold text-center mb-6">Who are We?</h1>
+                              <p className="text-lg text-gray-700 mb-4">
+                                Coffee Adnan is a prominent Lebanese coffee company that was established in 1951, with a rich heritage in providing high-quality coffee products to the local market and beyond. Based in Beirut, Lebanon, the company has built a strong reputation over the decades for its dedication to the craft of coffee roasting and blending.
+                              </p>
+                              <section className="mt-8">
+                                <h2 className="text-2xl font-semibold mb-4">Key Aspects of Coffee Adnan's Company Profile:</h2>
+                                <ol style={{textAlign:'left'}} className="list-decimal space-y-4">
+                                  <li>
+                                    <strong>Legacy and Tradition:</strong> With over seven decades of experience, Coffee Adnan has become one of the most trusted names in the coffee industry in Lebanon. The company has a long history of serving both traditional and modern coffee lovers, offering products that are rooted in Lebanese coffee culture.
+                                  </li>
+                                  <li>
+                                    <strong>Products and Services:</strong> Coffee Adnan specializes in premium Arabic coffee blends, often roasting beans in small batches to ensure quality and consistency. Their product range includes ground coffee, whole beans, and catering to the preferences of a diverse customer base. They are known for blending rich flavors that are associated with traditional Lebanese coffee.
+                                  </li>
+                                  <li>
+                                    <strong>Roasting and Blending Expertise:</strong> The company is recognized for its meticulous approach to the coffee roasting process. Coffee Adnan’s signature blends are created with high-quality beans sourced from various regions, roasted to perfection to enhance their distinct flavors.
+                                  </li>
+                                  <li>
+                                    <strong>Local and International Reach:</strong> While Coffee Adnan started in Beirut, the company has expanded its reach and now serves customers not only in Lebanon but also in international markets, particularly in the Middle East and the Arab diaspora.
+                                  </li>
+                                  <li>
+                                    <strong>Commitment to Quality:</strong> The company is committed to maintaining high standards in both the sourcing of its beans and the production process. This commitment to quality ensures that each cup of Coffee Adnan represents the best of Lebanese coffee culture.
+                                  </li>
+                                  <li>
+                                    <strong>Cultural Heritage:</strong> Coffee Adnan holds a special place in the cultural and social traditions of Lebanon. In Lebanese society, coffee is a symbol of hospitality, and the brand has contributed significantly to this aspect by offering a product that reflects the warmth and generosity of Lebanese culture.
+                                  </li>
+                                  <li>
+                                    <strong>Sustainability and Innovation:</strong> In more recent years, Coffee Adnan has made strides in sustainability, working to ensure that their coffee is ethically sourced and produced in an environmentally responsible manner. At the same time, the company continues to innovate by exploring new coffee varieties and brewing techniques to meet changing consumer demands.
+                                  </li>
+                                </ol>
+                              </section>
+                              <div className="mt-8 text-center">
+                                <button
+                                  className="px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
+                                  onClick={() => window.location.href = '/contact'}
+                                >
+                                  Contact Us
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
 
                     <h2
                       className="wp-block-heading has-text-align-center hg_what_learn_heading"
                       id="learn-more"
                     >
                       {" "}
-                      What do you want to learn?
+                      Learn More About Coffee
                     </h2>
                     <div className="hg_home_what_learn">
                       <div className="hg_wl_tiles">
@@ -125,32 +199,14 @@ export default function Home() {
 
                       </div>
                     </div>
-                    <div id="about" className="container mx-auto px-4 py-8 lg:py-16">
-                      <div className="grid lg:grid-cols-2 gap-8 items-center">
-                        <div className="text-center lg:text-left">
-                          <div className="who-we-are-block">
-                            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Who are We?</h3>
-                            <p className="text-gray-700 leading-relaxed">
-                              A community of passionate coffee hobbyists, baristas, and travelers
-                              who research, test, and share knowledge in the home barista market. We
-                              strive to simplify home coffee brewing so that you can make better
-                              decisions about buying and brewing quality coffee, without having to
-                              be an expert.
-                            </p>
-                          </div>
-                        </div>
-                        <div className="text-center">
-                          <div className="who-we-image">
-                            <img
-                              decoding="async"
-                              src="/wp-content/uploads/2023/07/brista-pouring-coffee.jpg"
-                              className="rounded-lg shadow-lg"
-                              alt="Coffee Community Learning"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
+
+
+
+
+
+
+
 
 
                     <div id="history" className="container mx-auto px-4 py-8 lg:py-16">
@@ -269,9 +325,9 @@ export default function Home() {
                     <div id="typec" className="container mx-auto px-4 py-8 lg:py-16">
                       <div className="outer_article_table_thumbrow">
                         <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-center">Types of Coffee</h2>
-                        <p className="text-gray-700 mb-6 leading-relaxed"> 
-                          
-                         
+                        <p className="text-gray-700 mb-6 leading-relaxed">
+
+
                           <li><b>Espresso:</b> A strong, concentrated coffee brewed by forcing hot water through finely-ground coffee beans. It forms the base for many coffee drinks.</li>
 
                           <li><b>Americano:</b> Espresso diluted with hot water for a milder flavor.</li>
@@ -289,10 +345,10 @@ export default function Home() {
                           <li><b>Cold Brew:</b> Coffee steeped in cold water for 12-24 hours, resulting in a smooth, low-acidity drink.</li>
 
                           <li><b>French Press:</b> Coarsely ground coffee steeped in hot water, then filtered using a plunger. </li>
-                         
-                         
-                         
-                         </p>
+
+
+
+                        </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                           <div className="cmnarticlethumbcol text-center">
                             <div className="table_article_thumb">
@@ -379,10 +435,10 @@ export default function Home() {
 
 
       <style
-  dangerouslySetInnerHTML={{
-    __html: "\n.inside-header {\n    padding: 15px 0px;!important\n}\n\n"
-  }}
-/>
+        dangerouslySetInnerHTML={{
+          __html: "\n.inside-header {\n    padding: 15px 0px;!important\n}\n\n"
+        }}
+      />
     </>
 
   );

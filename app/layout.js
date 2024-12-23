@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import RandomBackground from '../app/_components/RandomBackground';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -83,7 +84,7 @@ export default function RootLayout({ children }) {
   <meta property="article:modified_time" content="2023-12-15T14:14:03+00:00" />
   <meta
     property="og:image"
-    content="/pics/logo.png"
+    content="pics/logo.png"
   />
   <meta property="og:image:width" content={512} />
   <meta property="og:image:height" content={512} />
@@ -340,21 +341,21 @@ export default function RootLayout({ children }) {
   />
   <link
     rel="icon"
-    href="/pics/logo.png"
+    href="pics/logo.png"
     sizes="32x32"
   />
   <link
     rel="icon"
-    href="/pics/logo.png"
+    href="pics/logo.png"
     sizes="192x192"
   />
   <link
     rel="apple-touch-icon"
-    href="/pics/logo.png"
+    href="pics/logo.png"
   />
   <meta
     name="msapplication-TileImage"
-    content="/pics/logo.png"
+    content="pics/logo.png"
   />
   <style
     id="wp-custom-css"
@@ -370,8 +371,13 @@ export default function RootLayout({ children }) {
         "\t\n\t\t.site-logo {\n\t\t\tposition: relative;\n\t\t\tz-index: 9;\n\t\t\ttop: -22px;\n\t\t}\n\t\t.top-bar .inside-top-bar {\n\t\t\tpadding-bottom: 0;\n\t\t}\n\t\t.outertoprightbar > p {\n\t\t\tcolor: #333;\n\t\t\tmargin: 0;\n\t\t\tfont-size: 14px;\n\t\t}\n\t\t.toprightbar {\n\t\t\tmin-height: 29px;\t    \n\t\t}\n\t\t.site-header .header-image {\n\t\t\twidth: 250px;\n\t\t}\n\t\t.inside-header.grid-container.grid-parent {\n\t\t\tdisplay: flex;\n\t\t\talign-items: center;\n\t\t\tjustify-content: space-between;\n\t\t\tpadding-bottom: 0;\n\t\t}\n\t\t.top-bar.top-bar-align-right {\n\t\t\tbackground: #fff;\n\t\t\tmargin-bottom: -33px;\n\t\t\tposition: relative;\n\t\t\tz-index: 1;\n\t\t}\n\t\t.toprightbar,\n\t\t.toprightbar ul,\n\t\t.toprightbar .hdrnewsleter,\n\t\t.toprightbar .hdrnewsleter .hdrnewsleterform {\n\t\t\tdisplay: flex;\n\t\t\talign-items: center;\n\t\t}\n\t\t.toprightbar .hdrnewsleter {\n\t\t\tpadding-bottom: 3px;\n\t\t}\n\t\t.hdrnewsleter.active {\n\t\t\tborder-bottom: 1px solid #cfcfcf;\n\t\t}\n\t\t.toprightbar ul li {\n\t\t\tpadding: 0;\n\t\t\tmargin: 0px 10px 0px 0; \n\t\t}\n\t\t.toprightbar ul li a {\n\t\t\tfont-size: 16px;\n\t\t}\n\t\t.top-bar .toprightbar a {\n\t\t\tcolor: #594F4F;\n\t\t\tfont-size: 16px;\n\t\t}\n\t\t.hdrnewsleter .hdrnewsleterform {\n\t\t\twidth: 0;\n\t\t\toverflow: hidden;\n\t\t}\n\t\t.hdrnewsleter.active .hdrnewsleterform {\n\t\t\twidth: auto;\n\t\t\toverflow: auto;\n\t\t}\n\t\t.hdrnewsleter.active .tnp.tnp-subscription {\n\t\t\twidth: 220px;\n\t\t}\n\t\t.hdrnewsleter.active a {\n\t\t\tfont-size: 0;\n\t\t}\n\t\t.hdrnewsleter.active a i{\n\t\t\tfont-size: 16px;\n\t\t}\n\t\t.hdrnewsleter a i {\n\t\t\tmargin-right: 3px;\n\t\t}\n\t\t.toprightbar ul li i{\n\t\t\tmargin: 0 5px 0px 0; \n\t\t}\t\n\t\t.toprightbar .hdrnewsleter > p {\n\t\t\tdisplay: none;\n\t\t}\n\t\t.toprightbar .hdrnewsleter .hdrnewsleterform form {\n\t\t\tposition: relative;\n\t\t}\n\t\t.toprightbar .hdrnewsleter .hdrnewsleterform form label {\n\t\t\tdisplay: none;\n\t\t}\n\t\t.toprightbar .hdrnewsleter .hdrnewsleterform form > div {\n\t\t\tmargin: 0;\n\t\t}\n\t\t.toprightbar .hdrnewsleter .hdrnewsleterform form > div.tnp-field.tnp-field-button {\n\t\t\tposition: absolute;\n\t\t\ttop: 0;\n\t\t\tright: 0;\n\t\t\twidth: 90px;\n\t\t\theight: 25px;\n\t\t}\n\t\t.toprightbar .hdrnewsleter {\n\t\t\tdisplay: flex;\n\t\t\talign-items: center;\n\t\t}\n\t\t.toprightbar .hdrnewsleter .hdrnewsleterform form input#tnp-1 {\n\t\t\tpadding: 0 10px;\n\t\t\theight: 25px;\n\t\t\tbackground: transparent;\n\t\t}\n\t\t.toprightbar .hdrnewsleter .hdrnewsleterform form > div.tnp-field.tnp-field-button input.tnp-submit {\n\t\t\tpadding: 0;\n\t\t\twidth: 100%;\n\t\t\theight: 23px;\n\t\t}\n\t\t.hdrnewsleterform span.closeform {\n\t\t\theight: 22px;\n\t\t\tdisplay: flex;\n\t\t\talign-items: center;\n\t\t\tjustify-content: center;\n\t\t\tmargin-left: 2px;\n\t\t\tcursor: pointer;\n\t\t}\n\t\t.hdrnewsleterform span.closeform svg line {\n\t\t\tstroke: #45ada8;\n\t\t}\n\t\t.hdrnewsleterform span.closeform svg {\n\t\t\theight: 20px;\n\t\t\twidth: 20px;\n\t\t}\n\t\t@media(max-width: 1280px){\n\t\t\t.top-bar .inside-top-bar {\n\t\t\t\tpadding: 10px 40px 0;\n\t\t\t}\n\t\t}\n\t\t@media(max-width: 1199px){\n\t\t\t.site-header .header-image {\n\t\t\t\twidth: 220px;\n\t\t\t}\n\t\t\t.main-navigation .main-nav ul li a {\n\t\t\t\tpadding-left: 4px;\n\t\t\t\tpadding-right: 4px;\n\t\t\t\tline-height: 30px;\n\t\t\t\tfont-size: 15px;\n\t\t\t}\n\t\t\t.menu-item-has-children .dropdown-menu-toggle {\n\t\t\t\tpadding-right: 8px;\n\t\t\t\tpadding-left: 8px;\n\t\t\t}\n\t\t}\n\t\t@media(max-width: 991px){\n\t\t\t.main-navigation .main-nav ul li a {\n\t\t\t\tfont-size: 13px;\n\t\t\t}\n\t\t}\n\t\t@media(max-width: 767px){\n\t\t\t.outertoprightbar {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.site-logo {\n\t\t\t\ttop: 0px;\n\t\t\t}\n\t\t}\n\t\t@media(max-width: 550px){\n\t\t\t.top-bar.top-bar-align-right {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\t.top-bar.top-bar-align-right {\n\t\t\t\tmargin-bottom: -10px;\n\t\t\t}\n\t\t}\n\t"
     }}
   />
-</>
 
+<link href="https://fonts.cdnfonts.com/css/frutiger-lt-arabic" rel="stylesheet"/>
+                
+
+
+</>
+<RandomBackground />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
