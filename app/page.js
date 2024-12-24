@@ -3,11 +3,27 @@
 import Image from "next/image";
 import Nav from "./_components/Nav";
 import Footer from "./_components/Footer";
+import Loading from './_components/Loading';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
 
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      // Simulate a loading delay of 2 seconds
+      const timer = setTimeout(() => {
+          setLoading(false);
+      }, 2000);
+
+      return () => clearTimeout(timer); // Cleanup on unmount
+  }, []);
+
   return (
     <>
+    {loading && <Loading />}
       <Nav />
 
 
@@ -84,17 +100,31 @@ export default function Home() {
 
 
 
+             
+
+
+
+
                     <div id="about" className="container mx-auto px-4 py-8 lg:py-16">
-                      <div className="grid">
-                        <div className="text-center lg:text-left">
-                          <div className="who-we-are-block">
-                            <div className="container mx-auto px-4 py-8">
+                      <div className="grid lg:grid-cols-2 gap-8 items-center">
+
+                      <div className="container mx-auto px-4 py-8">
                               <h1 className="text-3xl font-bold text-center mb-6">Who are We?</h1>
                               <p className="text-lg text-gray-700 mb-4">
                                 Coffee Adnan is a prominent Lebanese coffee company that was established in 1951, with a rich heritage in providing high-quality coffee products to the local market and beyond. Based in Beirut, Lebanon, the company has built a strong reputation over the decades for its dedication to the craft of coffee roasting and blending.
                               </p>
+                              <div className="text-center">
+                          <div className="who-we-image">
+                            <img
+                              decoding="async"
+                              src="/pics/002.webp"
+                              className="rounded-lg shadow-lg"
+                              alt="Coffee Community Learning"
+                            />
+                          </div>
+                        </div>
                               <section className="mt-8">
-                                <h2 className="text-2xl font-semibold mb-4">Key Aspects of Coffee Adnan's Company Profile:</h2>
+                                <h2 className="text-2xl font-semibold mb-4">Key aspects of our company:</h2>
                                 <ol style={{textAlign:'left'}} className="list-decimal space-y-4">
                                   <li>
                                     <strong>Legacy and Tradition:</strong> With over seven decades of experience, Coffee Adnan has become one of the most trusted names in the coffee industry in Lebanon. The company has a long history of serving both traditional and modern coffee lovers, offering products that are rooted in Lebanese coffee culture.
@@ -119,7 +149,20 @@ export default function Home() {
                                   </li>
                                 </ol>
                               </section>
-                              <div className="mt-8 text-center">
+
+                            </div>
+                        <div className="text-center">
+                          <div className="who-we-image">
+                            <img
+                              decoding="async"
+                              src="/pics/009.webp"
+                              className="rounded-lg shadow-lg"
+                              alt="Coffee Community Learning"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="mt-8 text-center">
                                 <button
                                   className="px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
                                   onClick={() => window.location.href = '/contact'}
@@ -127,9 +170,7 @@ export default function Home() {
                                   Contact Us
                                 </button>
                               </div>
-                            </div>
-                          </div>
-                        </div>
+
                       </div>
                     </div>
 
@@ -228,29 +269,7 @@ export default function Home() {
                                 decoding="async"
                               />
                             </div>
-                          </div>
-                          <div className="cmnarticlethumbcol text-center">
-                            <div className="table_article_thumb">
-                              <img
-                                loading="lazy"
-                                src="/pics/002.webp"
-                                className="rounded-lg shadow-lg"
-                                alt="Making coffee in the best home espresso machine"
-                                decoding="async"
-                              />
-                            </div>
-                          </div>
-                          <div className="cmnarticlethumbcol text-center">
-                            <div className="table_article_thumb">
-                              <img
-                                loading="lazy"
-                                src="/pics/003.webp"
-                                className="rounded-lg shadow-lg"
-                                alt="Christmas gift basket with coffee beans in glass jar and two"
-                                decoding="async"
-                              />
-                            </div>
-                          </div>
+                          </div> 
                         </div>
                       </div>
                     </div>
@@ -258,16 +277,7 @@ export default function Home() {
 
                     <div id="typer" className="container mx-auto px-4 py-8 lg:py-16">
                       <div className="grid lg:grid-cols-2 gap-8 items-center">
-                        <div className="text-center">
-                          <div className="who-we-image">
-                            <img
-                              decoding="async"
-                              src="/pics/004.webp"
-                              className="rounded-lg shadow-lg"
-                              alt="Coffee Community Learning"
-                            />
-                          </div>
-                        </div>
+
                         <div className="text-center lg:text-left">
                           <div className="who-we-are-block">
                             <h3 className="text-2xl lg:text-3xl font-bold mb-4">Types of Roasts</h3>
@@ -284,6 +294,16 @@ export default function Home() {
                               Bold and smoky with a bitter-sweet profile.
                               Beans are shiny, blackish-brown with a noticeable oil layer.
                             </p>
+                          </div>
+                        </div>
+                        <div className="text-center">
+                          <div className="who-we-image">
+                            <img
+                              decoding="async"
+                              src="/pics/004.webp"
+                              className="rounded-lg shadow-lg"
+                              alt="Coffee Community Learning"
+                            />
                           </div>
                         </div>
 
@@ -311,7 +331,7 @@ export default function Home() {
                           <div className="who-we-image">
                             <img
                               decoding="async"
-                              src="pics/005.webp"
+                              src="pics/003.webp"
                               className="rounded-lg shadow-lg"
                               alt="Coffee Community Learning"
                             />
@@ -354,35 +374,14 @@ export default function Home() {
                             <div className="table_article_thumb">
                               <img
                                 loading="lazy"
-                                src="/pics/007.webp"
+                                src="pics/005.webp"
                                 className="rounded-lg shadow-lg"
                                 alt="Selection Of Manual Brewers"
                                 decoding="async"
                               />
                             </div>
                           </div>
-                          <div className="cmnarticlethumbcol text-center">
-                            <div className="table_article_thumb">
-                              <img
-                                loading="lazy"
-                                src="/pics/008.webp"
-                                className="rounded-lg shadow-lg"
-                                alt="Making coffee in the best home espresso machine"
-                                decoding="async"
-                              />
-                            </div>
-                          </div>
-                          <div className="cmnarticlethumbcol text-center">
-                            <div className="table_article_thumb">
-                              <img
-                                loading="lazy"
-                                src="/pics/009.webp"
-                                className="rounded-lg shadow-lg"
-                                alt="Christmas gift basket with coffee beans in glass jar and two"
-                                decoding="async"
-                              />
-                            </div>
-                          </div>
+ 
                         </div>
                       </div>
                     </div>

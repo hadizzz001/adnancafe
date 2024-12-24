@@ -25,28 +25,34 @@ export default function NavBar() {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={
+                isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
             ></path>
           </svg>
         </button>
         <ul
-        style={{padding:'2em'}}
+          style={{ padding: "2em" }}
           className={`${
             isOpen ? "block" : "hidden"
           } absolute md:static top-16 left-0 w-full md:w-auto bg-black/80 md:bg-transparent 
           md:flex flex-col md:flex-row items-center md:space-x-8 space-y-4 md:space-y-0 py-4 md:py-0 transition-all`}
         >
-          <li className="list-none text-white text-lg hover:text-[#a0292a] !hover:text-[#a0292a] transition-colors">
+          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
             <a id="navlist" href="/">Home</a>
+            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
           </li>
-          <li className="list-none text-white text-lg hover:text-[#a0292a] !hover:text-[#a0292a] transition-colors">
-            <a id="navlist" href="/#about">About</a>
+          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
+            <a id="navlist" href="/#about">About Us</a>
+            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
           </li>
-          <li className="list-none text-white text-lg hover:text-[#a0292a] !hover:text-[#a0292a] transition-colors">
-            <a id="navlist" href="/#history">Coffee</a>
+          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
+            <a id="navlist" href="/#history">Learn More About Coffee</a>
+            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
           </li>
-          <li className="list-none text-white text-lg hover:text-[#a0292a] !hover:text-[#a0292a] transition-colors">
-            <a id="navlist" href="/contact">Contact</a>
+          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
+            <a id="navlist" href="/contact">Contact Us</a>
+            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
           </li>
         </ul>
       </div>
