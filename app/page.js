@@ -126,7 +126,7 @@ export default function Home() {
                                 <strong>Legacy and Tradition:</strong> With over seven decades of experience, Coffee Adnan has become one of the most trusted names in the coffee industry in Lebanon. The company has a long history of serving both traditional and modern coffee lovers, offering products that are rooted in Lebanese coffee culture.
                               </li>
                               <li>
-                                <strong>Products and Services:</strong> Coffee Adnan specializes in premium Arabic coffee blends, often roasting beans in small batches to ensure quality and consistency. Their product range includes ground coffee, whole beans, and catering to the preferences of a diverse customer base. They are known for blending rich flavors that are associated with traditional Lebanese coffee.
+                                <strong>Products and Services:</strong> Coffee Adnan specializes in premium coffee blends, often roasting beans in small batches to ensure quality and consistency. Our product range includes ground coffee, whole beans, and catering to the preferences of a diverse customer base. We are known for blending rich flavors that are associated with traditional Lebanese coffee.
                               </li>
                               <li>
                                 <strong>Roasting and Blending Expertise:</strong> The company is recognized for its meticulous approach to the coffee roasting process. Coffee Adnan’s signature blends are created with high-quality beans sourced from various regions, roasted to perfection to enhance their distinct flavors.
@@ -141,7 +141,7 @@ export default function Home() {
                                 <strong>Cultural Heritage:</strong> Coffee Adnan holds a special place in the cultural and social traditions of Lebanon. In Lebanese society, coffee is a symbol of hospitality, and the brand has contributed significantly to this aspect by offering a product that reflects the warmth and generosity of Lebanese culture.
                               </li>
                               <li>
-                                <strong>Sustainability and Innovation:</strong> In more recent years, Coffee Adnan has made strides in sustainability, working to ensure that their coffee is ethically sourced and produced in an environmentally responsible manner. At the same time, the company continues to innovate by exploring new coffee varieties and brewing techniques to meet changing consumer demands.
+                                <strong>Sustainability and Innovation:</strong> In more recent years, Coffee Adnan has made strides in sustainability, working to ensure that our coffee is ethically sourced and produced in an environmentally responsible manner. At the same time, the company continues to innovate by exploring new coffee varieties and brewing techniques to meet changing consumer demands.
                               </li>
                             </ol>
                           </section>
@@ -239,27 +239,33 @@ export default function Home() {
 
 
 
+                
                     <div id="history" className="container mx-auto px-4 py-8 lg:py-16">
-                      <div className="outer_article_table_thumbrow">
-                        <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-center">History of Coffee</h2>
-                        <p className="text-gray-700 mb-6 leading-relaxed">
-                          <b>Discovery in Ethiopia (9th Century)</b>
+                      <div className="grid lg:grid-cols-2 gap-8 items-center">
+                      
+                        <div className="text-center lg:text-left">
+                          <div className="who-we-are-block">
+                            <h3 className="text-2xl lg:text-3xl font-bold mb-4">History of Coffee</h3>
+                            <p className="text-gray-700 leading-relaxed">
+                            <b>Discovery in Ethiopia (9th Century)</b>
                           <br />
                           The origins of coffee are often linked to the 9th century in Ethiopia. Legend has it that a goat herder named Kaldi discovered coffee when he noticed that his goats became energetic after eating berries from a particular tree. Curious about the effects, Kaldi tried the berries himself, and soon after, he felt the same burst of energy. Monks in a local monastery then began to brew a drink from the beans to stay awake during their long prayers.
-                        </p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                          <div className="cmnarticlethumbcol text-center">
-                            <div className="table_article_thumb">
-                              <img
-                                loading="lazy"
-                                src="/pics/001.webp"
-                                className="rounded-lg shadow-lg"
-                                alt="Selection Of Manual Brewers"
-                                decoding="async"
-                              />
-                            </div>
+                        
+                            </p>
                           </div>
                         </div>
+                        <div className="text-center">
+                          <div className="who-we-image">
+                            <img
+                              decoding="async"
+                              src="/pics/001.webp"
+                              className="rounded-lg shadow-lg"
+                              alt="Coffee Community Learning"
+                            />
+                          </div>
+                        </div>
+
+
                       </div>
                     </div>
 
@@ -331,59 +337,59 @@ export default function Home() {
                     </div>
 
 
+
                     <div id="typec" className="container mx-auto px-4 py-8 lg:py-16">
-                      <div className="outer_article_table_thumbrow">
-                        <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-center">Types of Coffee</h2>
-                        <p className="text-gray-700 mb-6 leading-relaxed">
+                      <div className="grid lg:grid-cols-2 gap-8 items-center">
+                      
+                        <div className="text-center lg:text-left">
+                          <div className="who-we-are-block">
+                            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Types of Coffee</h3>
+                            <p className="text-gray-700 leading-relaxed">
+                            <li><b>Espresso:</b> A strong, concentrated coffee brewed by forcing hot water through finely-ground coffee beans. It forms the base for many coffee drinks.</li>
 
+<li><b>Americano:</b> Espresso diluted with hot water for a milder flavor.</li>
 
-                          <li><b>Espresso:</b> A strong, concentrated coffee brewed by forcing hot water through finely-ground coffee beans. It forms the base for many coffee drinks.</li>
+<li><b>Latte:</b> Espresso mixed with steamed milk and topped with a light layer of foam.</li>
 
-                          <li><b>Americano:</b> Espresso diluted with hot water for a milder flavor.</li>
+<li><b>Cappuccino:</b> Equal parts espresso, steamed milk, and milk foam, often topped with cocoa or cinnamon.</li>
 
-                          <li><b>Latte:</b> Espresso mixed with steamed milk and topped with a light layer of foam.</li>
+<li><b>Macchiato:</b> Espresso "stained" with a small amount of milk or foam.</li>
 
-                          <li><b>Cappuccino:</b> Equal parts espresso, steamed milk, and milk foam, often topped with cocoa or cinnamon.</li>
+<li><b>Mocha:</b> A blend of espresso, chocolate syrup, and steamed milk, topped with whipped cream.</li>
 
-                          <li><b>Macchiato:</b> Espresso "stained" with a small amount of milk or foam.</li>
+<li><b>Flat White:</b> Similar to a latte but with a smoother texture, achieved using microfoam.</li>
 
-                          <li><b>Mocha:</b> A blend of espresso, chocolate syrup, and steamed milk, topped with whipped cream.</li>
+<li><b>Cold Brew:</b> Coffee steeped in cold water for 12-24 hours, resulting in a smooth, low-acidity drink.</li>
 
-                          <li><b>Flat White:</b> Similar to a latte but with a smoother texture, achieved using microfoam.</li>
+<li><b>French Press:</b> Coarsely ground coffee steeped in hot water, then filtered using a plunger. </li>
 
-                          <li><b>Cold Brew:</b> Coffee steeped in cold water for 12-24 hours, resulting in a smooth, low-acidity drink.</li>
-
-                          <li><b>French Press:</b> Coarsely ground coffee steeped in hot water, then filtered using a plunger. </li>
-
-
-
-                        </p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                          <div className="cmnarticlethumbcol text-center">
-                            <div className="table_article_thumb">
-                              <img
-                                loading="lazy"
-                                src="pics/005z.webp"
-                                className="rounded-lg shadow-lg"
-                                alt="Selection Of Manual Brewers"
-                                decoding="async"
-                              />
-                            </div>
+                            </p>
                           </div>
-
+                        </div>
+                        <div className="text-center">
+                          <div className="who-we-image">
+                            <img
+                              decoding="async"
+                              src="/pics/005z.webp"
+                              className="rounded-lg shadow-lg"
+                              alt="Coffee Community Learning"
+                            />
+                          </div>
                         </div>
                         <center style={{ marginTop: '20px' }}>
 
 
-                          <button
-                            className=" px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
-                            onClick={() => window.location.href = '/contact'}
-                          >
-                            Contact Us
-                          </button>
-                        </center>
+<button
+  className=" px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
+  onClick={() => window.location.href = '/contact'}
+>
+  Contact Us
+</button>
+</center>
+
                       </div>
                     </div>
+ 
 
                     <p />
                   </div>

@@ -33,7 +33,7 @@ export default function NavBar() {
         <ul
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-16 right-0 w-full md:w-[70vw] h-[80vh] bg-black/90 flex flex-col py-10 px-12 transition-all`}
+          } absolute top-16 right-0 w-full md:w-[30vw] h-[60vh] bg-black/90 flex flex-col py-10 px-12 transition-all`}
         >
           <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/">Home</a>
