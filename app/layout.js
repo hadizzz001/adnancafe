@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
   <link rel="preconnect" href="https://ads.adthrive.com/" crossOrigin="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {/* This site is optimized with the Yoast SEO plugin v21.8 - https://yoast.com/wordpress/plugins/seo/ */}
-  <title>CoffeeAdnan - Your Trusted Resource For All Things Coffee</title>
+  <title>CoffeeAdnan</title>
   <meta
     name="description"
     content="CoffeeAdnan is the leading coffee website online. Our team of specialty coffee experts cover everything from gear reviews to brewing guides."
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="CoffeeAdnan - Your Trusted Resource For All Things Coffee"
+    content="CoffeeAdnan"
   />
   <meta
     property="og:description"
@@ -84,15 +84,8 @@ export default function RootLayout({ children }) {
   />
   <meta property="og:url" content="" />
   <meta property="og:site_name" content="CoffeeAdnan" />
-  <meta
-    property="article:publisher"
-    content="https://www.facebook.com/homegroundsco/"
-  />
-  <meta property="article:modified_time" content="2023-12-15T14:14:03+00:00" />
-  <meta
-    property="og:image"
-    content="pics/logo.png"
-  />
+ 
+ 
   <meta property="og:image:width" content={512} />
   <meta property="og:image:height" content={512} />
   <meta property="og:image:type" content="image/png" />

@@ -7,15 +7,14 @@ export default function NavBar() {
 
   return (
     <nav id="contactnv" className="absolute w-full z-10 bg-transparent">
-      <div className="container mx-auto flex justify-between items-center px-6 py-4">
-        <div className="text-white font-bold text-2xl"> </div>
+      <div className="container mx-auto flex justify-end items-center px-6 py-4">
         <button
-          className="text-white md:hidden focus:outline-none"
+          className="text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
         >
           <svg
-            className="w-6 h-6"
+            className="w-8 h-8"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -32,27 +31,25 @@ export default function NavBar() {
           </svg>
         </button>
         <ul
-          style={{ padding: "2em" }}
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute md:static top-16 left-0 w-full md:w-auto bg-black/80 md:bg-transparent 
-          md:flex flex-col md:flex-row items-center md:space-x-8 space-y-4 md:space-y-0 py-4 md:py-0 transition-all`}
+          } absolute top-16 right-0 w-full md:w-[70vw] h-[80vh] bg-black/90 flex flex-col py-10 px-12 transition-all`}
         >
-          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
+          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/">Home</a>
-            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
+            <span className="block h-[2px] w-full bg-white mt-2"></span>
           </li>
-          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
+          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/#about">About Us</a>
-            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
+            <span className="block h-[2px] w-full bg-white mt-2"></span>
           </li>
-          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
+          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/#history">Learn More About Coffee</a>
-            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
+            <span className="block h-[2px] w-full bg-white mt-2"></span>
           </li>
-          <li className="list-none text-white text-lg hover:text-[#a0292a] transition-colors relative">
+          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/contact">Contact Us</a>
-            <div className="block md:hidden h-px bg-white/50 w-full absolute left-0 bottom-0"></div>
+            <span className="block h-[2px] w-full bg-white mt-2"></span>
           </li>
         </ul>
       </div>

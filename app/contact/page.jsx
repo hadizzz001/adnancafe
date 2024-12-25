@@ -61,7 +61,7 @@ export default function Home() {
         </a>
 
         {/* Email Icon */}
-        <a href="mailto:fadims1@hotmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:info@coffeeadnan.co" target="_blank" rel="noopener noreferrer">
           <FaEnvelope className="text-blue-500 text-6xl hover:text-blue-700" />
         </a>
       </div>

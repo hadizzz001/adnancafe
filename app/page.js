@@ -162,14 +162,7 @@ export default function Home() {
                           </div>
                         </div>
 
-                        <div className="mt-8 text-center">
-                          <button
-                            className="px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
-                            onClick={() => window.location.href = '/contact'}
-                          >
-                            Contact Us
-                          </button>
-                        </div>
+                       
 
                       </div>
                     </div>
@@ -187,7 +180,7 @@ export default function Home() {
                       {" "}
                       Learn More About Coffee
                     </h2>
-                    <div className="hg_home_what_learn">
+                    <div className="hg_home_what_learn md:block">
                       <div className="hg_wl_tiles">
                         <div className="hg_wl_tile has-thumbnail">
                           <a href="#history">
@@ -300,7 +293,7 @@ export default function Home() {
                           <div className="who-we-image">
                             <img
                               decoding="async"
-                              src="/pics/004.webp"
+                              src="/pics/004z.webp"
                               className="rounded-lg shadow-lg"
                               alt="Coffee Community Learning"
                             />
@@ -374,7 +367,7 @@ export default function Home() {
                             <div className="table_article_thumb">
                               <img
                                 loading="lazy"
-                                src="pics/005.webp"
+                                src="pics/005z.webp"
                                 className="rounded-lg shadow-lg"
                                 alt="Selection Of Manual Brewers"
                                 decoding="async"
@@ -448,6 +441,13 @@ export default function Home() {
           __html: "\n.inside-header {\n    padding: 15px 0px;!important\n}\n\n"
         }}
       />
+
+<style
+  dangerouslySetInnerHTML={{
+    __html: "\n  .hg_home_what_learn {\n    display: block; \n}\n"
+  }}
+/>
+
     </>
 
   );
