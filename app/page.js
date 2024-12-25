@@ -13,17 +13,17 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-      // Simulate a loading delay of 2 seconds
-      const timer = setTimeout(() => {
-          setLoading(false);
-      }, 5000);
+    // Simulate a loading delay of 2 seconds
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
 
-      return () => clearTimeout(timer); // Cleanup on unmount
+    return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
 
   return (
     <>
-    {loading && <Loading />}
+      {loading && <Loading />}
       <Nav />
 
 
@@ -51,7 +51,7 @@ export default function Home() {
                         muted
                         loop
                       >
-                        <source src="/pics/vid1.mp4" type="video/mp4" />
+                        <source src="/pics/vid2.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
 
@@ -100,7 +100,7 @@ export default function Home() {
 
 
 
-             
+
 
 
 
@@ -108,49 +108,49 @@ export default function Home() {
                     <div id="about" className="container mx-auto px-4 py-8 lg:py-16">
                       <div className="grid lg:grid-cols-2 gap-8 items-center">
 
-                      <div className="container mx-auto px-4 py-8">
-                              <h1 className="text-3xl font-bold text-center mb-6">Who are We?</h1>
-                              <p className="text-lg text-gray-700 mb-4">
-                                Coffee Adnan is a prominent Lebanese coffee company that was established in 1951, with a rich heritage in providing high-quality coffee products to the local market and beyond. Based in Beirut, Lebanon, the company has built a strong reputation over the decades for its dedication to the craft of coffee roasting and blending.
-                              </p>
-                              <div className="text-center">
-                          <div className="who-we-image">
-                            <img
-                              decoding="async"
-                              src="/pics/002.webp"
-                              className="rounded-lg shadow-lg"
-                              alt="Coffee Community Learning"
-                            />
-                          </div>
-                        </div>
-                              <section className="mt-8">
-                                <h2 className="text-2xl font-semibold mb-4">Key aspects of our company:</h2>
-                                <ol style={{textAlign:'left'}} className="list-decimal space-y-4">
-                                  <li>
-                                    <strong>Legacy and Tradition:</strong> With over seven decades of experience, Coffee Adnan has become one of the most trusted names in the coffee industry in Lebanon. The company has a long history of serving both traditional and modern coffee lovers, offering products that are rooted in Lebanese coffee culture.
-                                  </li>
-                                  <li>
-                                    <strong>Products and Services:</strong> Coffee Adnan specializes in premium Arabic coffee blends, often roasting beans in small batches to ensure quality and consistency. Their product range includes ground coffee, whole beans, and catering to the preferences of a diverse customer base. They are known for blending rich flavors that are associated with traditional Lebanese coffee.
-                                  </li>
-                                  <li>
-                                    <strong>Roasting and Blending Expertise:</strong> The company is recognized for its meticulous approach to the coffee roasting process. Coffee Adnan’s signature blends are created with high-quality beans sourced from various regions, roasted to perfection to enhance their distinct flavors.
-                                  </li>
-                                  <li>
-                                    <strong>Local and International Reach:</strong> While Coffee Adnan started in Beirut, the company has expanded its reach and now serves customers not only in Lebanon but also in international markets, particularly in the Middle East and the Arab diaspora.
-                                  </li>
-                                  <li>
-                                    <strong>Commitment to Quality:</strong> The company is committed to maintaining high standards in both the sourcing of its beans and the production process. This commitment to quality ensures that each cup of Coffee Adnan represents the best of Lebanese coffee culture.
-                                  </li>
-                                  <li>
-                                    <strong>Cultural Heritage:</strong> Coffee Adnan holds a special place in the cultural and social traditions of Lebanon. In Lebanese society, coffee is a symbol of hospitality, and the brand has contributed significantly to this aspect by offering a product that reflects the warmth and generosity of Lebanese culture.
-                                  </li>
-                                  <li>
-                                    <strong>Sustainability and Innovation:</strong> In more recent years, Coffee Adnan has made strides in sustainability, working to ensure that their coffee is ethically sourced and produced in an environmentally responsible manner. At the same time, the company continues to innovate by exploring new coffee varieties and brewing techniques to meet changing consumer demands.
-                                  </li>
-                                </ol>
-                              </section>
-
+                        <div className="container mx-auto px-4 py-8">
+                          <h1 className="text-3xl font-bold text-center mb-6">Who are We?</h1>
+                          <p className="text-lg text-gray-700 mb-4">
+                            Coffee Adnan is a prominent Lebanese coffee company that was established in 1951, with a rich heritage in providing high-quality coffee products to the local market and beyond. Based in Beirut, Lebanon, the company has built a strong reputation over the decades for its dedication to the craft of coffee roasting and blending.
+                          </p>
+                          <div className="text-center">
+                            <div className="who-we-image">
+                              <img
+                                decoding="async"
+                                src="/pics/002.webp"
+                                className="rounded-lg shadow-lg"
+                                alt="Coffee Community Learning"
+                              />
                             </div>
+                          </div>
+                          <section className="mt-8">
+                            <h2 className="text-2xl font-semibold mb-4">Key aspects of our company:</h2>
+                            <ol style={{ textAlign: 'left' }} className="list-decimal space-y-4">
+                              <li>
+                                <strong>Legacy and Tradition:</strong> With over seven decades of experience, Coffee Adnan has become one of the most trusted names in the coffee industry in Lebanon. The company has a long history of serving both traditional and modern coffee lovers, offering products that are rooted in Lebanese coffee culture.
+                              </li>
+                              <li>
+                                <strong>Products and Services:</strong> Coffee Adnan specializes in premium Arabic coffee blends, often roasting beans in small batches to ensure quality and consistency. Their product range includes ground coffee, whole beans, and catering to the preferences of a diverse customer base. They are known for blending rich flavors that are associated with traditional Lebanese coffee.
+                              </li>
+                              <li>
+                                <strong>Roasting and Blending Expertise:</strong> The company is recognized for its meticulous approach to the coffee roasting process. Coffee Adnan’s signature blends are created with high-quality beans sourced from various regions, roasted to perfection to enhance their distinct flavors.
+                              </li>
+                              <li>
+                                <strong>Local and International Reach:</strong> While Coffee Adnan started in Beirut, the company has expanded its reach and now serves customers not only in Lebanon but also in international markets, particularly in the Middle East and the Arab diaspora.
+                              </li>
+                              <li>
+                                <strong>Commitment to Quality:</strong> The company is committed to maintaining high standards in both the sourcing of its beans and the production process. This commitment to quality ensures that each cup of Coffee Adnan represents the best of Lebanese coffee culture.
+                              </li>
+                              <li>
+                                <strong>Cultural Heritage:</strong> Coffee Adnan holds a special place in the cultural and social traditions of Lebanon. In Lebanese society, coffee is a symbol of hospitality, and the brand has contributed significantly to this aspect by offering a product that reflects the warmth and generosity of Lebanese culture.
+                              </li>
+                              <li>
+                                <strong>Sustainability and Innovation:</strong> In more recent years, Coffee Adnan has made strides in sustainability, working to ensure that their coffee is ethically sourced and produced in an environmentally responsible manner. At the same time, the company continues to innovate by exploring new coffee varieties and brewing techniques to meet changing consumer demands.
+                              </li>
+                            </ol>
+                          </section>
+
+                        </div>
                         <div className="text-center">
                           <div className="who-we-image">
                             <img
@@ -163,13 +163,13 @@ export default function Home() {
                         </div>
 
                         <div className="mt-8 text-center">
-                                <button
-                                  className="px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
-                                  onClick={() => window.location.href = '/contact'}
-                                >
-                                  Contact Us
-                                </button>
-                              </div>
+                          <button
+                            className="px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
+                            onClick={() => window.location.href = '/contact'}
+                          >
+                            Contact Us
+                          </button>
+                        </div>
 
                       </div>
                     </div>
@@ -269,7 +269,7 @@ export default function Home() {
                                 decoding="async"
                               />
                             </div>
-                          </div> 
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -381,8 +381,18 @@ export default function Home() {
                               />
                             </div>
                           </div>
- 
+
                         </div>
+                        <center style={{ marginTop: '20px' }}>
+
+
+                          <button
+                            className=" px-6 py-3 text-white bg-[#a0292a] rounded-lg shadow-md hover:bg-[#8c2326] transition duration-300"
+                            onClick={() => window.location.href = '/contact'}
+                          >
+                            Contact Us
+                          </button>
+                        </center>
                       </div>
                     </div>
 
