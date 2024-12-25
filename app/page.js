@@ -45,15 +45,11 @@ export default function Home() {
 
                     <div className="relative w-full h-screen">
                       {/* Video Background */}
-                      <video
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                        autoPlay
-                        muted
-                        loop
-                      >
-                        <source src="/pics/vid2.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
+                      <img
+  className="absolute top-0 left-0 w-full h-full object-cover"
+  src="/pics/vid3.gif"
+  alt="Background Animation"
+/>
 
                       {/* Overlay Content */}
                       <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
