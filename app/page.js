@@ -16,7 +16,7 @@ export default function Home() {
     // Simulate a loading delay of 2 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
 
     return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
