@@ -31,28 +31,35 @@ export default function NavBar() {
           </svg>
         </button>
         <ul
+        id="navlistid"
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-16 right-0 w-full md:w-[30vw] h-[60vh] bg-black/90 flex flex-col py-10 px-12 transition-all`}
+          } absolute top-16 right-0 w-full md:w-[20vw] h-[60vh] flex flex-col py-10 px-12 transition-all bg-black text-white md:bg-transparent md:text-black`}
         >
-          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
+          <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/">Home</a>
-            <span className="block h-[2px] w-full bg-white mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
           </li>
-          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
+          <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/#about">About Us</a>
-            <span className="block h-[2px] w-full bg-white mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
           </li>
-          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
+          <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/#history">Learn More About Coffee</a>
-            <span className="block h-[2px] w-full bg-white mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
           </li>
-          <li className="list-none text-white text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
+          <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/contact">Contact Us</a>
-            <span className="block h-[2px] w-full bg-white mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
           </li>
         </ul>
       </div>
+      <style
+  dangerouslySetInnerHTML={{
+    __html: "\n  #navlistid{\n        padding-bottom: 50em;\n  }\n"
+  }}
+/>
+
     </nav>
   );
 }
