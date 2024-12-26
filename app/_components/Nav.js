@@ -7,7 +7,7 @@ export default function NavBar() {
 
   return (
     <nav id="contactnv" className="absolute w-full z-10 bg-transparent">
-      <div className="container mx-auto flex justify-end items-center px-6 py-4">
+      <div className="  mx-auto flex justify-end items-center px-6 py-4">
         <button
           className="text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -34,10 +34,10 @@ export default function NavBar() {
           id="navlistid"
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-16 right-0 w-full md:w-[20vw] h-[30vh] flex flex-col py-10 px-12 transition-all bg-black text-white md:bg-transparent md:text-black`}
+          } absolute top-16 right-0 w-full md:w-[25vw] h-[30vh] flex flex-col py-10 px-12 transition-all bg-black text-white md:bg-transparent md:text-black`}
         >
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
-            <a id="navlist" href="/">Home</a>
+            <a  id="navlist" href="/">Home</a>
             <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
@@ -45,7 +45,7 @@ export default function NavBar() {
             <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
-            <a id="navlist" href="/#history" className="coffee-link">
+            <a id="navlist" href="/#learn-more" className="coffee-link">
               <span className="hidden md:inline">
                 Learn More<br /> About Coffee
               </span>
@@ -65,7 +65,7 @@ export default function NavBar() {
         dangerouslySetInnerHTML={{
           __html: `
           #navlistid {
-            padding-bottom: 20em;
+            padding-bottom: 17em;
           }
           `,
         }}
