@@ -34,7 +34,7 @@ export default function NavBar() {
           id="navlistid"
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-16 right-0 w-full md:w-[20vw] h-[45vh] flex flex-col py-10 px-12 transition-all bg-black text-white md:bg-transparent md:text-black`}
+          } absolute top-16 right-0 w-full md:w-[20vw] h-[60vh] flex flex-col py-10 px-12 transition-all bg-black text-white md:bg-transparent md:text-black`}
         >
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/">Home</a>
@@ -45,14 +45,13 @@ export default function NavBar() {
             <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
-            <a
-              id="navlist"
-              href="/#history"
-              className="break-words md:whitespace-nowrap"
-            >
-              Learn More
-              <span className="block md:hidden"> About Coffee</span>
-              <span className="hidden md:inline"> About Coffee</span>
+            <a id="navlist" href="/#history" className="coffee-link">
+              <span className="hidden md:inline">
+                Learn More<br /> About Coffee
+              </span>
+              <span className="md:hidden">
+                Learn More About Coffee
+              </span>
             </a>
             <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
@@ -62,6 +61,15 @@ export default function NavBar() {
           </li>
         </ul>
       </div>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          #navlistid {
+            padding-bottom: 30em;
+          }
+          `,
+        }}
+      />
     </nav>
   );
 }
