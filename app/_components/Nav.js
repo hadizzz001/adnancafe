@@ -38,25 +38,25 @@ export default function NavBar() {
         >
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/">Home</a>
-            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/#about">About Us</a>
-            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/#history">Learn More About Coffee</a>
-            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/contact">Contact Us</a>
-            <span className="block h-[2px] w-full bg-white md:bg-black mt-2"></span>
+            <span className="block h-[2px] w-full bg-white md:bg-white mt-2"></span>
           </li>
         </ul>
       </div>
       <style
   dangerouslySetInnerHTML={{
-    __html: "\n  #navlistid{\n        padding-bottom: 50em;\n  }\n"
+    __html: "\n  #navlistid{\n        padding-bottom: 30em;\n  }\n"
   }}
 />
 
