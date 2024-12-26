@@ -34,7 +34,7 @@ export default function NavBar() {
           id="navlistid"
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-16 right-0 w-full md:w-[20vw] h-[60vh] flex flex-col py-10 px-12 transition-all bg-black text-white md:bg-transparent md:text-black`}
+          } absolute top-16 right-0 w-full md:w-[20vw] h-[30vh] flex flex-col py-10 px-12 transition-all bg-black text-white md:bg-transparent md:text-black`}
         >
           <li className="list-none text-lg font-semibold hover:text-[#a0292a] transition-colors py-4 flex flex-col items-center">
             <a id="navlist" href="/">Home</a>
@@ -65,7 +65,7 @@ export default function NavBar() {
         dangerouslySetInnerHTML={{
           __html: `
           #navlistid {
-            padding-bottom: 30em;
+            padding-bottom: 20em;
           }
           `,
         }}
