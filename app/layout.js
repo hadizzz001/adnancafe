@@ -303,20 +303,9 @@ export default function RootLayout({ children }) {
     name="follow.it-verification-code-aThZRzU0LzgvZjdPWWoyUm9IcGtLTTZ6V2dydml3blBuM3prcFFoMzVhdllvWVUzeXRBeGhOcVc2a25FQndxbkYyWERUZkpTSS9OK01vRkdJaE1PSlNBS1l6UTdGRlFXWlpRczBCMTM3OHczVWhwcFh0NzZTUHFWbXNzcW80RDl8SlYvYStvUUFYTDhGRTVSclBEV3NqNURWK1AvNWk5NzZIdFF3YjN2a3pYQT0="
     content="TRLqwGEmUSjQYnvWU0C0"
   />
-  {/* HFCM by 99 Robots - Snippet # 1: GSC, Tag Manager &amp; Outbound clicks, + Manifest &amp; Service Worker &amp; Adthrive */}
-  <meta
-    name="google-site-verification"
-    content="-F3ySY9rkcGCXdr2Z6CTDi6Picsb_1fkxc_5m1UkmDc"
-  />
-  <meta
-    name="facebook-domain-verification"
-    content="nfgq72iib8h9qnaflm59qfzs6ynzdp"
-  />
-  <link rel="manifest" href="manifest.webmanifest" />
-  {/* Google tag (gtag.js) */}
-  <meta name="msvalidate.01" content="8E074A9FA6158B6EE1B0D77962E1D861" />
-  {/* /end HFCM by 99 Robots */}
-  {/* HFCM by 99 Robots - Snippet # 16: Hide Referrer &amp; CSP */}
+ 
+ 
+ 
   <meta name="referrer" content="origin-when-cross-origin" />
   <meta
     httpEquiv="Content-Security-Policy"
@@ -385,7 +374,7 @@ export default function RootLayout({ children }) {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-BWXKXXWGPP');
+      gtag('config', 'G-YB8ES1JKS3');
     `}
  
   </Script>
