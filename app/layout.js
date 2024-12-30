@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
   <title>Coffee Adnan</title>
   <meta
     name="description"
-    content="Best quality if coffee priducts"
+    content="Best quality of coffee products."
   />
   <link rel="canonical" href="" />
   <meta property="og:locale" content="en_US" />
@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
   />
   <meta
     property="og:description"
-    content="Best quality if coffee priducts"
+    content="Best quality of coffee products."
   />
   <meta property="og:url" content="" />
   <meta property="og:site_name" content="Coffee Adnan" />
