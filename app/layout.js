@@ -66,24 +66,24 @@ export default function RootLayout({ children }) {
   <link rel="preconnect" href="https://ads.adthrive.com/" crossOrigin="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {/* This site is optimized with the Yoast SEO plugin v21.8 - https://yoast.com/wordpress/plugins/seo/ */}
-  <title>CoffeeAdnan</title>
+  <title>Coffee Adnan</title>
   <meta
     name="description"
-    content="CoffeeAdnan is the leading coffee website online. Our team of specialty coffee experts cover everything from gear reviews to brewing guides."
+    content="Best quality if coffee priducts"
   />
   <link rel="canonical" href="" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="CoffeeAdnan"
+    content="Coffee Adnan"
   />
   <meta
     property="og:description"
-    content="CoffeeAdnan is the leading coffee website online. Our team of specialty coffee experts cover everything from gear reviews to brewing guides."
+    content="Best quality if coffee priducts"
   />
   <meta property="og:url" content="" />
-  <meta property="og:site_name" content="CoffeeAdnan" />
+  <meta property="og:site_name" content="Coffee Adnan" />
  
  
   <meta property="og:image:width" content={512} />
@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
   <link
     rel="alternate"
     type="application/rss+xml"
-    title="CoffeeAdnan » Feed"
+    title="Coffee Adnan » Feed"
     href="feed/"
   />
   <link
